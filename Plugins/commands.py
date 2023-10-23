@@ -19,8 +19,8 @@ async def start(c, m):
       await c.send_message(chat_id=m.chat.id,
                            text=Translation.START,
                            parse_mode="html",
-                           disable_web_page_preview=True,
-                           reply_to_message_id=m.message_id)
+                           quote=True)
+                           
 
 ################################################################################################################################################################################################################################################
 # about command
@@ -30,7 +30,7 @@ async def about(c, m):
       await c.send_message(chat_id=m.chat.id,
                            text=Translation.ABOUT,
                            parse_mode="html",
-                           disable_web_page_preview=True,
-                           reply_to_message_id=m.message_id)
+                           quote=True)
+                           
 
 ################################################################################################################################################################################################################################################
